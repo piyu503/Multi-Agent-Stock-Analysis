@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Multi-Agent Stock Analysis Platform",
+  title: "TradeRunner | Multi-Agent Stock Analysis Platform",
   description: "Evidence-backed institutional equity research powered by coordinated AI agent swarms.",
 };
 

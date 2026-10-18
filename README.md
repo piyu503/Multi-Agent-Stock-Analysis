@@ -1,4 +1,4 @@
-# Multi-Agent Stock Analysis Platform
+# TradeRunner - Multi-Agent Stock Analysis Platform
 
 An institutional-grade, AI-powered stock analysis platform designed to orchestrate specialized AI agents for deep equity research, financial statement parsing, DCF valuation modeling, and dialectic Bull/Bear thesis stress-testing.
 

@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     )
 
     # Core Application Settings
-    PROJECT_NAME: str = "Multi-Agent Stock Analysis Platform"
+    PROJECT_NAME: str = "TradeRunner"
     VERSION: str = "0.1.0"
     API_V1_PREFIX: str = "/api/v1"
     ENVIRONMENT: Literal["development", "staging", "production"] = "development"
@@ -52,9 +52,13 @@ class Settings(BaseSettings):
     SUPABASE_ANON_KEY: Optional[str] = None
     SUPABASE_SERVICE_ROLE_KEY: Optional[str] = None
 
-    # LLM Provider Configuration (Future Phase)
-    LLM_PROVIDER: str = "gemini"  # "gemini" | "openai" | "anthropic" | "local"
+    # LLM Provider Configuration
+    LLM_PROVIDER: Literal["ollama", "gemini"] = "ollama"
+    OLLAMA_BASE_URL: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "deepseek-r1:7b"
+    OLLAMA_TIMEOUT_SECONDS: float = 180.0
     GEMINI_API_KEY: Optional[str] = None
+    GEMINI_MODEL: str = "gemini-2.0-flash"
 
 
 @lru_cache()

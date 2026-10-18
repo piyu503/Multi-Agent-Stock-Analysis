@@ -1,4 +1,4 @@
-# Multi-Agent Stock Analysis Platform — Architecture Specification
+# TradeRunner — Multi-Agent Stock Analysis Platform — Architecture Specification
 
 ## 1. System Vision & Objective
 

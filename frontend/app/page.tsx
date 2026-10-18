@@ -1,5 +1,7 @@
 import React from 'react';
 import { HealthStatusIndicator } from '@/features/health/HealthStatusIndicator';
+import { StockMarketLookup } from '@/features/market-data/StockMarketLookup';
+import { TechnicalAnalysisCard } from '@/features/analysis/TechnicalAnalysisCard';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 
@@ -73,10 +75,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="h-8 w-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-emerald-400 flex items-center justify-center font-black text-slate-950 text-sm shadow-md shadow-indigo-500/20">
-              AS
+              TR
             </div>
             <div>
-              <span className="font-bold tracking-tight text-white">AetherStock</span>
+              <span className="font-bold tracking-tight text-white">TradeRunner</span>
               <span className="text-xs text-slate-400 ml-2 font-mono">v0.1.0-alpha</span>
             </div>
           </div>
@@ -108,7 +110,7 @@ export default function Home() {
             <span className="text-xs text-slate-500">Autonomous Financial Intelligence</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-            AI-Powered Multi-Agent Stock Analysis Platform
+            TradeRunner &bull; AI-Powered Multi-Agent Stock Analysis
           </h1>
           <p className="text-sm sm:text-base text-slate-400 max-w-3xl leading-relaxed">
             Foundational architecture designed for high-conviction equity research. Scaffolds a modular monorepo
@@ -120,6 +122,18 @@ export default function Home() {
         <section aria-labelledby="system-health-title">
           <h2 id="system-health-title" className="sr-only">System Health</h2>
           <HealthStatusIndicator />
+        </section>
+
+        {/* Milestone 1: NSE Market Data Pipeline */}
+        <section aria-labelledby="market-data-title">
+          <h2 id="market-data-title" className="sr-only">Market Data Feed</h2>
+          <StockMarketLookup />
+        </section>
+
+        {/* Milestone 2: Technical Stock Analyst (Local LLM) */}
+        <section aria-labelledby="technical-analysis-title">
+          <h2 id="technical-analysis-title" className="sr-only">Technical Stock Analysis</h2>
+          <TechnicalAnalysisCard />
         </section>
 
         {/* Planned Agent Swarm Preview */}
@@ -211,7 +225,7 @@ npm run build`}
       {/* Footer */}
       <footer className="border-t border-slate-800/80 py-6 mt-12 bg-slate-950/80 text-xs text-slate-500 text-center">
         <div className="max-w-7xl mx-auto px-4">
-          Multi-Agent Stock Analysis Platform Architecture &bull; Designed for LangGraph, Gemini, and PostgreSQL
+          TradeRunner Architecture &bull; Designed for LangGraph, Gemini, and PostgreSQL
         </div>
       </footer>
     </div>

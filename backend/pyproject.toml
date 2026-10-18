@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "stock-analysis-backend"
+name = "traderunner-backend"
 version = "0.1.0"
-description = "Multi-Agent Stock Analysis Platform Backend"
+description = "TradeRunner - Multi-Agent Stock Analysis Platform Backend"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -19,6 +19,8 @@ dependencies = [
     "asyncpg>=0.29.0",
     "aiosqlite>=0.20.0",
     "python-dotenv>=1.0.1",
+    "yfinance>=1.7.0",
+    "pandas>=2.2.0",
 ]
 
 [project.optional-dependencies]
